@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="547d0d6f-0327-4085-a5e0-3d84881f86bf" name="Default Changelist" comment="" />
+    <list default="true" id="547d0d6f-0327-4085-a5e0-3d84881f86bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculatorClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculatorInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculatorServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingCalculatorClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingCalculatorClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwingCalculatorClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwingCalculatorClient.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Rus8IkvwktE7yleC0lpYW94eAW" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -21,7 +35,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -41,18 +56,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="CalculatorServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CalculatorServer" />
+  <component name="RunManager" selected="Application.SwingCalculatorClient">
+    <configuration name="CalculatorClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CalculatorClient" />
       <module name="RMI_Calculator" />
-      <option name="VM_PARAMETERS" value="-Djava.rmi.server.codebase=file:~/IntelliJProjects/RMI_Calculator/out/production/RMI_Calculator/" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CalculatorServer" />
+      <module name="RMI_Calculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwingCalculatorClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SwingCalculatorClient" />
+      <module name="RMI_Calculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CalculatorServer" />
+      <item itemvalue="Application.SwingCalculatorClient" />
+      <item itemvalue="Application.CalculatorClient" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SwingCalculatorClient" />
         <item itemvalue="Application.CalculatorServer" />
+        <item itemvalue="Application.CalculatorClient" />
       </list>
     </recent_temporary>
   </component>
@@ -67,10 +102,28 @@
       <option name="presentableId" value="Default" />
       <updated>1570528155284</updated>
       <workItem from="1570528160951" duration="4045000" />
+      <workItem from="1570799668111" duration="317000" />
+      <workItem from="1571395629682" duration="480000" />
+      <workItem from="1571405151733" duration="1644000" />
+      <workItem from="1571406805555" duration="323000" />
+      <workItem from="1571407148863" duration="954000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

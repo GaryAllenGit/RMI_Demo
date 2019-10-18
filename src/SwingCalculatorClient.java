@@ -7,14 +7,13 @@ import java.awt.*;
 
 class SwingCalculatorClient extends JFrame implements ActionListener{
 
-	JTextField X, Y,Z;
-	JButton Add,Sub,Mul,Div;
-	JPanel Row1, Row2, Row3;
+	private JTextField X, Y,Z;
+	private JButton Add,Sub,Mul,Div;
 
-	CalculatorInterface calc;
+	private CalculatorInterface calc;
 
 
-	public SwingCalculatorClient (String hostname) {
+	private SwingCalculatorClient(String hostname) {
 
 		try {
 			Registry registry = LocateRegistry.getRegistry(hostname);
@@ -43,31 +42,31 @@ class SwingCalculatorClient extends JFrame implements ActionListener{
 		Y = new JTextField("Input 2",12);
 		Z = new JTextField("Result",15);
 
-		Row1 = new JPanel();
-		Row2 = new JPanel();
-		Row3 = new JPanel();
+		JPanel row1 = new JPanel();
+		JPanel row2 = new JPanel();
+		JPanel row3 = new JPanel();
 
-		Row1.setLayout(new FlowLayout(FlowLayout.CENTER));
-		Row2.setLayout(new FlowLayout(FlowLayout.CENTER));
-		Row3.setLayout(new FlowLayout(FlowLayout.CENTER));
+		row1.setLayout(new FlowLayout(FlowLayout.CENTER));
+		row2.setLayout(new FlowLayout(FlowLayout.CENTER));
+		row3.setLayout(new FlowLayout(FlowLayout.CENTER));
 
-		cp.add("North",Row1);
-		cp.add("Center",Row2);
-		cp.add("South",Row3);
+		cp.add("North", row1);
+		cp.add("Center", row2);
+		cp.add("South", row3);
 
-		Row1.add(X);
-		Row1.add(Y);
-		Row2.add(Add);
-		Row2.add(Sub);
-		Row2.add(Mul);
-		Row2.add(Div);
-		Row3.add(Z);
+		row1.add(X);
+		row1.add(Y);
+		row2.add(Add);
+		row2.add(Sub);
+		row2.add(Mul);
+		row2.add(Div);
+		row3.add(Z);
 
 
 		// Stop java if window closed by window close icon
 		addWindowListener (new WindowAdapter () {
 			public void windowClosing (WindowEvent evt) {
-				System.exit(0);;
+				System.exit(0);
 			}
 		} );
 	}
@@ -112,7 +111,7 @@ class SwingCalculatorClient extends JFrame implements ActionListener{
 		}
 	}
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		String remoteMachine;
 
 		if (args.length == 0)
@@ -122,7 +121,7 @@ class SwingCalculatorClient extends JFrame implements ActionListener{
 
 		SwingCalculatorClient MyCalc = new SwingCalculatorClient(remoteMachine);
 
-		MyCalc.setSize(300,200);
+		MyCalc.setSize(350,200);
 		MyCalc.setTitle("Java RMI Calculator");
 		MyCalc.setVisible(true);
 	}
