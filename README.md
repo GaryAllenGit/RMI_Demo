@@ -26,7 +26,7 @@ To use this demo:
 3) Start the rmiregistry **but set the classpath first**. You can do this in the Terminal within IntelliJ or with a separate stand alone terminal:
 
 
-    CLASSPATH=<<ClassToCompiledClasses>>
+    CLASSPATH=<< ClassToCompiledClasses >>
     rmiregistry
 
 where << ClassToCompiledClasses >> is the path to the built (compiled) code.  For example:
